@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:41:13 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/02 12:54:53 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/04/02 13:53:59 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,13 @@ class	Fixed{
 		Fixed(float const n);
 		
 		Fixed &	operator=(Fixed const & rhs);
+		bool	operator>(Fixed const & rhs);
+		bool	operator<(Fixed const & rhs);
+		bool	operator>=(Fixed const & rhs);
+		bool	operator<=(Fixed const & rhs);
+		bool	operator==(Fixed const & rhs);
+		bool	operator!=(Fixed const & rhs);
+		Fixed &	operator+(Fixed const & rhs);
 
 		~Fixed(void);
 		

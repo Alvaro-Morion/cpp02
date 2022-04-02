@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:41:29 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/02 12:54:56 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/04/02 13:53:57 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,42 @@ Fixed &	Fixed::operator=(Fixed const & rhs)
 	std::cout << "Assignation operator called \n";
 	this->_value = rhs.getRawBits();
 	return(*this);
+}
+
+bool	Fixed::operator>(Fixed const & rhs)
+{
+	return(this->_value > rhs.getRawBits());
+}
+
+bool	Fixed::operator<(Fixed const & rhs)
+{
+	return(this->_value < rhs.getRawBits());
+}
+
+bool	Fixed::operator>=(Fixed const & rhs)
+{
+	return(this->_value >= rhs.getRawBits());
+}
+
+bool	Fixed::operator<=(Fixed const & rhs)
+{
+	return(this->_value <= rhs.getRawBits());
+}
+
+bool	Fixed::operator==(Fixed const & rhs)
+{
+	return(this->_value == rhs.getRawBits());
+}
+
+bool	Fixed::operator!=(Fixed const & rhs)
+{
+	return(this->_value != rhs.getRawBits());
+}
+
+Fixed &	Fixed::operator+(Fixed const & rhs)
+{
+
+	return();
 }
 
 std::ostream    & operator<<(std::ostream & o, Fixed const & fp)
