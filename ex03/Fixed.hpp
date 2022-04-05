@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:41:13 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/05 12:19:29 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:28:22 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,17 @@ class	Fixed{
 		Fixed(int const n);
 		Fixed(float const n);
 		
-		Fixed &	operator=(Fixed const & rhs);
-		bool	operator>(Fixed const & rhs) const;
-		bool	operator<(Fixed const & rhs) const;
-		bool	operator>=(Fixed const & rhs) const;
-		bool	operator<=(Fixed const & rhs) const;
-		bool	operator==(Fixed const & rhs) const;
-		bool	operator!=(Fixed const & rhs) const;
-		Fixed 	operator+(Fixed const & rhs) const;
-		Fixed	operator-(Fixed const & rhs) const;
-		Fixed	operator*(Fixed const & rhs) const;
-		Fixed	operator/(Fixed const & rhs) const;
+		Fixed const	&operator=(Fixed const & rhs);
+		bool	operator>(Fixed const & rhs);
+		bool	operator<(Fixed const & rhs);
+		bool	operator>=(Fixed const & rhs);
+		bool	operator<=(Fixed const & rhs);
+		bool	operator==(Fixed const & rhs);
+		bool	operator!=(Fixed const & rhs);
+		Fixed 	operator+(Fixed const & rhs);
+		Fixed	operator-(Fixed const & rhs);
+		Fixed	operator*(Fixed const & rhs);
+		Fixed	operator/(Fixed const & rhs);
 		Fixed	&operator++(void);
 		Fixed	&operator--(void);
 		float	operator++(int);
