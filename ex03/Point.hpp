@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 11:41:24 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/05 12:51:37 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/04/08 10:35:46 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ class	point{
 		~point();
 		Fixed	getX() const;
 		Fixed	getY() const;
-		point &operator=(point const &rhs);
+		point	&operator=(point const &rhs);
+		point	operator-(point const &rhs);
 	private:
 		Fixed const _x;
 		Fixed const _y;

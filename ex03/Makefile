@@ -6,11 +6,11 @@
 #    By: amorion- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 09:14:58 by amorion-          #+#    #+#              #
-#    Updated: 2022/04/05 11:56:01 by amorion-         ###   ########.fr        #
+#    Updated: 2022/04/08 09:51:48 by amorion-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = Fixed.cpp point.cpp main.cpp
+SRCS = Fixed.cpp Point.cpp main.cpp bsp.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

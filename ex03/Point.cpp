@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 11:46:03 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/05 13:27:50 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/04/08 09:50:25 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /* Constructores y destructor*/
 
-point::point(void)
+point::point(void ) : _x(0), _y(0) 
 {}
 
 point::point(Fixed const x, Fixed const y) : _x(x), _y(y)
@@ -42,4 +42,10 @@ point	&point::operator=(point const &rhs)
 {
 	(void)rhs;
 	return(*this);
+}
+
+point	point::operator-(point const &rhs)
+{
+	point result(this->getX()-rhs.getX(), this->getY()-rhs.getY());
+	return(result);
 }
