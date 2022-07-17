@@ -6,7 +6,7 @@
 /*   By: amorion- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:41:29 by amorion-          #+#    #+#             */
-/*   Updated: 2022/04/02 12:54:56 by amorion-         ###   ########.fr       */
+/*   Updated: 2022/07/17 12:07:18 by amorion-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ Fixed::Fixed(void)
 
 Fixed::Fixed(Fixed const & src)
 {
-	*this = src;
 	std::cout << "Copy constructor called\n";
+	*this = src;
 }
 
 Fixed::Fixed(int const n)
